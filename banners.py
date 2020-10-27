@@ -1,6 +1,13 @@
 
 def main():
-    pass
+    letter_art = letter_dictionary()
+    string = get_input()
+    for letter in string:
+        print(' ')
+        for row in letter_art[letter]:
+            for cell in row:
+                print(cell, end='')
+            print()
 
 def letter_dictionary():
     letter_art = {
