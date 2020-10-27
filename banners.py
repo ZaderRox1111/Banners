@@ -170,3 +170,10 @@ def letter_dictionary():
     }
     
     return letter_art
+
+def get_input():
+    string = input("Please enter a word: ").upper()
+
+    return string
+
+main()
