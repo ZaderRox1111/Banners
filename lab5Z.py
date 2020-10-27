@@ -1,6 +1,13 @@
 
 def main():
-    pass
+    letter_art = letter_dictionary()
+    string = get_input()
+    for letter in string:
+        print(' ')
+        for row in letter_art[letter]:
+            for cell in row:
+                print(cell, end='')
+            print()
 
 def letter_dictionary():
     letter_art = {
@@ -96,3 +103,10 @@ def letter_dictionary():
     }
     
     return letter_art
+
+def get_input():
+    string = input("Please enter a word: ").upper()
+
+    return string
+
+main()
