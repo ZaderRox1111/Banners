@@ -176,4 +176,5 @@ def get_input():
 
     return string
 
-main()
+if __name__ == '__main__':
+    main()
